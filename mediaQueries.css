@@ -456,7 +456,7 @@
     }
 
     .service-card{
-        height: 300px;
+        height: 340px;
         width: 100%;
     }
 
@@ -607,10 +607,7 @@
         flex-direction: column;
     }
 
-    .service-card{
-        height: 300px;
-        width: 100%;
-    }
+
 
     .service-card img{
         width: 100%;

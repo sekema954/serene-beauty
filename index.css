@@ -287,7 +287,7 @@
 }
 
 .change-dropdown-size{
-    height: 280px;
+    height: 290px;
 }
 
 .book-header{
@@ -332,12 +332,12 @@
 }
 
 .main-carousel {
-    height: 870px; /* Set the height of the carousel */
+    height: 870px; 
     display: flex;
-    padding: 0 280px; /* Adjust padding as needed */
-    overflow: hidden; /* Hide overflow to prevent horizontal scrollbars */
-    transition: all 0.5s; /* Smooth transition for all properties */
-    position: relative; /* Ensure the carousel is positioned relative */
+    padding: 0 280px; 
+    overflow: hidden; 
+    transition: all 0.5s; 
+    position: relative; 
 }
 
 .slider {
@@ -819,3 +819,66 @@ footer{
 .copyright span{
     color: var(--orangedColor);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***contact container***/
+
+.contact-container{
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr
+}
+
+.contact-information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CECCCC;
+}
+
+.contact-header>div{
+    margin: 30px;
+}
+
+
+.contact-icon{
+    width: 40px;
+    height: 40px;
+    border: solid var(--orangedColor) 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+    margin-right: 10px; 
+    margin: 10px;
+    background-color: white;
+
+}
+
+.contact-flex{
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+
+.contact-icon i {
+    font-size: 24px;
+}
+
+.contact-flex p {
+    margin: 0;
+}
+
