@@ -81,6 +81,12 @@
     }
 }
 
+@media(min-width:1347px) {
+    .dropdown{
+        display: none;
+    }
+}
+
 
 @media(max-width:1347px){
 
@@ -95,6 +101,10 @@
     .navbar .logo img{
         width: 200px;
         height: 25px;
+    }
+
+    .dropdown-menu{
+        display: flex;
     }
 
     .main-carousel{
@@ -367,6 +377,158 @@
     
 }
 
+@media(max-width: 585px) {
+    .small-section{
+        min-height: 200px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    
+    }
+
+    .explore-btn{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+       
+    }
+
+
+    .collection{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    
+    .details-card{
+        width: 120px;
+        height: 120px;
+        background-color: #FFFBF2;
+        position: absolute;
+        bottom: 5%;
+    }
+
+
+    .collection-wrapper{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px 0 10px;
+    }
+
+    .collection-card{
+        width: 100%;
+    }
+
+    
+    .coll-name h3{
+        font-size: 17px;
+    }
+
+    .details-card a{
+        font-size: 15px;
+    }
+      
+
+    .float-left{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services{
+        min-height: 80vh;
+        padding: 0 20px 0 20px;
+        display: flex;;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .service-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-card{
+        height: 300px;
+        width: 100%;
+    }
+
+    .service-card img{
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .under-service-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+
+    .under-service{
+        padding: 0 20px 0 20px;
+        min-height: 80vh;
+    }
+    
+    .under-service-card{
+        width: 100%;
+        height: 480px;
+    }
+
+    .featured-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px 0 20px;
+        
+    }
+
+    .testimonials{
+        display: grid;
+        height: fit-content;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 1fr;
+        padding: 0;
+        min-height: 600px;
+    }
+
+    .test-col1{
+        width: 100%;
+        height: 100%;
+        background-image: url(images/testimony.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    footer{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 60px 0 60px;
+    }
+
+    .copyright{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100px;
+        padding: 0 60px 0 60px;
+    }
+
+
+}
+
 @media(max-width:425px) {
     .small-section{
         min-height: 200px;
@@ -522,7 +684,7 @@
 }
 
 
-@media(max-width:320px){
+@media(max-width:335px){
     .collection-btn button{
         width: 130px;
         height: 40px;
