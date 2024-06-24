@@ -9,6 +9,10 @@
     font-style: normal;
 }
 
+input:focus, textarea:focus{
+    outline: solid var(--orangedColor) 1px !important;
+}
+
 :root{
     --orangedColor: #FB7902;
 }
@@ -445,6 +449,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .service-card{
@@ -635,6 +640,11 @@ padding: 0 25px 0 25px;
     grid-template-rows: 1fr;
 }
 
+.story-header{
+    display: flex;
+    justify-content: center;
+}
+
 .story-header span{
     color: var(--orangedColor);
 }
@@ -732,7 +742,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
     padding: 0 260px 0 260px;
 }
 
@@ -740,13 +749,14 @@ footer{
 
 .footer-wrapper{
     display: flex;
-    gap: 300px;
+    gap: 200px;
 }
 
 
 .footer-col input{
     width: 200px;
     height: 40px;
+    border: solid black 1px;
     padding-left: 20px;
 }
 
@@ -835,7 +845,6 @@ footer{
 /***contact container***/
 
 .contact-container{
-    height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr
@@ -845,8 +854,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #CECCCC;
 }
+
 
 .contact-header>div{
     margin: 30px;
@@ -869,8 +878,8 @@ footer{
 }
 
 .contact-flex{
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    align-items: center; 
 }
 
 
@@ -882,3 +891,235 @@ footer{
     margin: 0;
 }
 
+
+.span1{
+    color: var(--orangedColor);
+}
+
+.span2{
+    font-weight: 700;
+}
+
+.contact-form-top>div, .contact-form>div{
+    margin: 15px;
+}
+
+.contact-form input{
+    width: 230px;
+    height: 30px;
+    margin: 10px;
+    padding-left: 20px;
+    border: solid black 1px;
+}
+
+.contact-form textarea{
+    margin: 10px;
+    width: 230px;
+    height: 50px;
+    padding: 20px;
+}
+
+.submit-btn button{
+    width: 130px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .50s;
+}
+
+.submit-btn button:hover{
+    background-color: white;
+    color: black;
+    border: solid var(--orangedColor) 1px;
+}
+
+.branches{
+    margin-top: 5%;
+}
+
+.branch-header h1 span{
+    color: var(--orangedColor);
+}
+
+.branch-header{
+    display: flex;
+    justify-content: center;
+}
+
+.branch-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.branch1{
+    display:flex;
+    gap: 10px;
+    margin-top: 20px;
+    border: solid grey 1px;
+}
+
+.location-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-center-wrapper div>div{
+    margin: 10px;
+}
+
+.l-center-wrapper div a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.flex-icons{
+    display: flex;
+}
+
+.flex-icons img{
+    margin-right: 5px;
+}
+
+.branches hr{
+    margin-top: 5%;
+}
+
+
+.about-under-content span{
+    color: var(--orangedColor);
+}
+
+.about-under-content{
+    min-height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-under-content>div{
+    margin: 20px;
+    color: #4A4A4A;
+
+}
+
+
+.about-under-content div:nth-child(2){
+    font-weight: 700;
+}
+
+
+.our-history-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4A4A4A;
+
+}
+
+.history-flex>div{
+    margin: 15px;
+}
+
+.history-flex p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.history-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+ 
+}
+
+
+
+.lady-hour{
+    min-height: 30vh;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+
+.ceo-img img{
+    height: 500px;
+    padding-left: 280px;
+}
+
+.ceo-wrapper>div{
+    margin: 20px;
+}
+
+
+.about-container p{
+    color:  #4A4A4A;
+}
+
+
+
+.black-box{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin: 10px;
+}
+
+.ceo-activity p{
+    padding-left: 50px;
+}
+
+.ceo-activity>div{
+    margin: 20px;
+}
+
+.team{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 280px 0 280px;
+    margin-top: 30px;
+}
+
+.team span{
+    color: var(--orangedColor);
+}
+
+.team-btn button{
+    width: 180px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .50s;
+}
+
+.team-btn button:hover{
+    background-color: white;
+    color: black;
+    border: solid var(--orangedColor) 1px;
+}
+
+.about-container .services{
+    margin-top: 20px;
+}
+
+.about-container footer{
+    margin-top: 150px;
+}

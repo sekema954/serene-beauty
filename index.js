@@ -14,7 +14,7 @@ navbarFixed();
 function navbarFixed(){
     window.addEventListener('scroll', ()=>{
         const navbar = document.querySelector('.navbar');
-        if(window.scrollY >= 200) {
+        if(window.scrollY >= 90) {
             navbar.classList.add('position-fixed');
         } else {
             navbar.classList.remove('position-fixed');

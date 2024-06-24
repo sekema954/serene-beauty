@@ -41,7 +41,44 @@
     top: 50%;
  }
 
+ 
+.ceo-img img{
+    height: 500px;
+    padding-left: 0;
+    float: right;
 }
+
+
+.history-imgs img{
+    width: 300px;
+    height: 250px;
+}
+
+
+.lady-hour{
+    min-height: 30vh;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.team{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    margin-top: 30px;
+}
+
+.about-container footer{
+    margin-top: 180px;
+}
+
+
+
+}
+
+
 
 @media(max-width:1440px){
     .featured{
@@ -372,9 +409,64 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 40px;
+    }
+
+    .contact-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+
+    .branch-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .branch-header h1{
+        padding: 10%;
+    }
+
+    .history-imgs img{
+        width: 200px;
+        height: 150px;
+    }
+
+    .about-under-content img{
+        width: 200px;
+        height: 30px;
+    }
+
+    .lady-hour{
+        min-height: 30vh;
+        margin-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ceo-img img{
+        width: 90%;
+        height: 400px;
+    }
+
+    .about-container .services{
+        margin-top: 0px;
+        min-height: 30vh;
+    }
+
+
+    .ceo-img img{
+        height: 500px;
+        padding-right: 20px;
     }
     
+
+    
+    
+
 }
 
 @media(max-width: 585px) {
@@ -526,6 +618,47 @@
         padding: 0 60px 0 60px;
     }
 
+    .branch1{
+        display:flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+        border: solid grey 1px;
+    }
+
+    .branch1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .team-btn button{
+        width: 120px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: all .50s;
+    }
+
+    .about-container .services{
+        margin-top: 20px;
+    }
+
+    .about-under-content{
+        border-bottom: solid grey 1px;
+    }
+
+    .service-card{
+        height: fit-content;
+        width: 290px;
+    }
+    .about-container footer{
+        margin-top: 20px;
+    }
+
+    
+
 
 }
 
@@ -675,6 +808,11 @@
         padding: 0 60px 0 60px;
     }
 
+    .history-imgs img{
+        width: 100%;
+        height: 300px;
+    }
+
 
 
   
@@ -700,6 +838,22 @@
         width: 150px;
         height: 20px;
     }
+
+    .contact-form textarea{
+        margin: 10px;
+        width: 200px;
+        height: 50px;
+        padding: 20px;
+    }
+    
+    .branch1{
+        width: 100%;
+        display:flex;
+        gap: 10px;
+        margin-top: 20px;
+        border: solid grey 1px;
+    }
+
     
     
 }

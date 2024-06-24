@@ -12,25 +12,60 @@
 </head>
 <body>
    <div class="home-container">
-    <!---navbar menu-->
-        <nav class="navbar">
-            <!--left nav-->
-            <div class="left-nav">
-                <div class="logo">
-                    <img src="images/Logo.png" alt="">
+     <!---navbar menu-->
+     <nav class="navbar">
+        <!--left nav-->
+        <div class="left-nav">
+            <div class="logo">
+                <img src="images/Logo.png" alt="">
+            </div>
+        </div>
+        <!---center nav-->
+        <div class="center-nav">
+            <ul>
+                <li><a class="active-link link1" href="index.html">Home</a></li>
+                <li><a class="link2" href="services.html">Services</a></li>
+                <li><a class="link3" href="about.html">About Us</a></li>
+                <li><a class="link4" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <!---right nav-->
+        <div class="right-nav">
+            <div class="nav-icons">
+                <div class="search-icon">
+                    <img src="images/iconoir--search.png" alt="">
+                </div>
+                <div class="bag-icon">
+                    <img src="images/bi--bag-dash.png" alt="">
+                </div>
+                <div class="nav-login-btn">
+                    <a href="login.html">
+                        <button>Login</button>
+                    </a>
                 </div>
             </div>
-            <!---center nav-->
-            <div class="center-nav">
+        </div>
+        <!---menubar-->
+        <div class="menu-bar">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+    </nav>
+    <!---dropdownn menu-->
+    <div class="dropdown-menu">
+        <div class="dropdown-wrapper">
+            <div class="drop-nav">
                 <ul>
-                    <li><a class="" href="index.html">Home</a></li>
-                    <li><a class="" href="services.html">Services</a></li>
-                    <li><a class="" href="about.html">About Us</a></li>
-                    <li><a class="active-link" href="contact.html">Contact Us</a></li>
+                    <li><a class="active-link" href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <!---right nav-->
-            <div class="right-nav">
+
+            <!---nav icons-->
+            <div class="drop-icons">
                 <div class="nav-icons">
                     <div class="search-icon">
                         <img src="images/iconoir--search.png" alt="">
@@ -38,51 +73,16 @@
                     <div class="bag-icon">
                         <img src="images/bi--bag-dash.png" alt="">
                     </div>
-                    <div class="nav-login-btn">
+                    <div class="drop-nav-login-btn">
                         <a href="login.html">
                             <button>Login</button>
                         </a>
                     </div>
                 </div>
             </div>
-            <!---menubar-->
-            <div class="menu-bar">
-                <div class="bar bar1"></div>
-                <div class="bar bar2"></div>
-                <div class="bar bar3"></div>
-            </div>
-        </nav>
-        <!---dropdownn menu-->
-        <div class="dropdown-menu">
-            <div class="dropdown-wrapper">
-                <div class="drop-nav">
-                    <ul>
-                        <li><a class="" href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a class="active-link" href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-    
-                <!---nav icons-->
-                <div class="drop-icons">
-                    <div class="nav-icons">
-                        <div class="search-icon">
-                            <img src="images/iconoir--search.png" alt="">
-                        </div>
-                        <div class="bag-icon">
-                            <img src="images/bi--bag-dash.png" alt="">
-                        </div>
-                        <div class="drop-nav-login-btn">
-                            <a href="login.html">
-                                <button>Login</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-  
         </div>
+
+    </div>
 
         <!---contact form-->
         <section class="contact-container">
@@ -135,7 +135,104 @@
                     </div>
                 </div>
            </div>
+           <!---contact form-->
+           <div class="contact-form">
+                <div class="contact-form-header">
+                    <div class="contact-form-top">
+                        <div class="">
+                            <h1>Have a Question?</h1>
+                        </div>
+                        <hr>
+                        <div class="">
+                            <p><span class="span1">Business Hours: </span><span class="span2">Mon – Fri:</span>08.00 aM to 09.00 pM <span class="span2">Sat:</span> 09.00 AM To 06.00 PM</p>
+                        </div>
+                    </div>
+                   
+                    <form class="contact-form" action="">
+                        <div class="">
+                            <input type="text" name="" id="" placeholder="Your Name">
+                            <input type="email" name="" id="" placeholder="Email">
+                        </div>
+                        <div class="">
+                            <input type="text" name="" id="" placeholder="What Service You Want?">
+                            <input type="tel" name="" id="" placeholder="Phone">
+                        </div>
+                        <div class="">
+                            <textarea name="" id="" placeholder="Message"></textarea>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+           </div>
         </section>
+        <!---other branches-->
+        <section class="branches">
+            <div class="branch-header">
+                <h1>Come And Visit <span>Our Other Branches</span</h1>
+            </div>
+            <div class="branch-grid">
+                <div class="branch1 shift-right">
+                    <div class="location-center">
+                        <div class="l-center-wrapper">
+                            <div class="">
+                                <div class="">
+                                    <h3>Lekki, Nigeria</h3>
+                                </div>
+                                <div class="">
+                                    <p>6391 Elgin St. Celina, Delaware 10299</p>
+                                </div>
+                                <div class="flex-icons">
+                                    <img src="images/envelope.png" alt="">
+                                    <a href="mailto:@serenbeauty.com.ng">@serenbeauty.com.ng</a>
+                                </div>
+                                <div class="flex-icons">
+                                    <img src="images/phone.png" alt="">
+                                    <a href="tel:(207) 555-0119">(207) 555-0119</a>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                    <div class="sal">
+                        <img src="images/branch1.jpg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="branch1 branch2">
+                    <div class="location-center">
+                        <div class="l-center-wrapper">
+                            <div class="">
+                                <div class="">
+                                    <h3>Kumasi, Ghana</h3>
+                                </div>
+                                <div class="">
+                                    <p>Riverside 25, San Francisco California</p>
+                                </div>
+                                <div class="flex-icons">
+                                    <img src="images/envelope.png" alt="">
+                                    <a href="mailto:@@serenbeauty.com.gh">@serenbeauty.com.gh</a>
+                                </div>
+                                <div class="flex-icons">
+                                    <img src="images/phone.png" alt="">
+                                    <a href="tel:(303) 555-0105">(303) 555-0105</a>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                    <div class="sal">
+                        <img src="images/branch2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+
         <!---footer-->
         <footer>
             <div class="footer-wrapper">
