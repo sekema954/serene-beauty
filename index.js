@@ -14,13 +14,37 @@ navbarFixed();
 function navbarFixed(){
     window.addEventListener('scroll', ()=>{
         const navbar = document.querySelector('.navbar');
-        if(window.scrollY >= 90) {
+        if(window.scrollY >= 50) {
             navbar.classList.add('position-fixed');
         } else {
             navbar.classList.remove('position-fixed');
         }
     });
 };
+
+//log out btn
+logOut();
+function logOut(){
+    const logOutBtn = document.querySelector('.log-out-btn');
+    logOutBtn.addEventListener('click', ()=>{
+        const logoutWrapper = document.querySelector('.log-off');
+        logoutWrapper.classList.toggle('log-off-show')
+    });
+}
+
+logOutClicked();
+function logOutClicked(){
+    const logoffBtn = document.querySelector('.log-off-btn');
+    logoffBtn.addEventListener('click',()=>{
+        const LoginDiv = document.querySelector('.user');
+        const loginBtn = document.querySelector('.logout-hide');
+        LoginDiv.classList.add('logout-hide');
+        logoffBtn.classList.add('logout-hide');
+        loginBtn.classList.remove('logout-hide');
+        
+
+    })
+}
 
 
 

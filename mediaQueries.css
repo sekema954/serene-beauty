@@ -287,13 +287,27 @@
 }
 
 
-@media(max-width: 1023px){
+@media(max-width: 1024px){
     .service-card{
         height: 170px;
         width: 270px;
     }
-    
 
+
+    .collection-icon-card{
+        width: 200px;
+        height: 200px;
+        position: relative;
+    }
+
+    .makeup-type-card{
+        width: 200px;
+        height: fit-content;
+    }
+
+    .makeup-type-img img{
+        width: 200px;
+    }
 
 }
 
@@ -463,6 +477,65 @@
         padding-right: 20px;
     }
     
+
+    .make-up-type-wrapper{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .makeup-type-header a{
+        padding: 0 40px 0 40px;
+        text-align: center;
+    }
+
+    .makeup-type-header h1{
+        font-size: 20px;
+    }
+
+    .makeup-type-card{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .makeup-type-img img{
+        width: 300px;
+    }
+
+    .flex-images img{
+       width: 100%;
+    }
+
+    .makeup-type-header button{
+        width: 100px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: all .50s;
+    }
+    
+    .padding-container{
+        width: 100%;
+        padding: 0;
+    }
+
+    .makeup-type-header a{
+        padding: 5px;
+        text-align: center;
+    }
+
+    .makeup-type-img img{
+        width: 100%;
+    }
+
+
+
+    
+
+
 
     
     
@@ -655,6 +728,12 @@
     }
     .about-container footer{
         margin-top: 20px;
+    }
+
+    .login-grid{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr;
     }
 
     

@@ -32,34 +32,40 @@ input:focus, textarea:focus{
 }
 
 .login-main{
-    width: 60%;
+    width: 100%;
     height: 60%;
 }
 
 .login-grid{
-    width: 100%;
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr
 }
 
 .login-icon{
+    background-repeat: no-repeat !important;
+    height: 80vh;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/woman-writing-on-paper-3228878.png);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    
 }
 
 .register-icon{
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/woman-writing-on-paper.png)!important;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/woman-writing-on-paper-2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 0 10px;
 }
 
 .login-text{
@@ -73,8 +79,6 @@ input:focus, textarea:focus{
 
 
 .login-wrapper{
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +97,7 @@ input:focus, textarea:focus{
     width: 100%;
     height: 100%;
     color: white;
+    margin-top: 50px;
 }
 
 .login-header>div{
@@ -188,6 +193,16 @@ input:focus, textarea:focus{
     display: inline-block;
     margin: 20px;
 }
+
+.user{
+    display: flex !important;
+}
+
+.user img, .user p {
+    margin: 6px;
+    font-weight: 600;
+}
+
 
 
 .nav-login-btn button{
@@ -1122,4 +1137,286 @@ footer{
 
 .about-container footer{
     margin-top: 150px;
+}
+
+
+
+
+
+.items-prod{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+
+.collection-icon-card{
+    width: 260px;
+    height: 260px;
+    position: relative;
+}
+
+.collection-icon-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.collection-icon-card h2{
+    position: absolute;
+    top: 10%;
+    left: 2%;
+}
+
+.collection-icon-card span{
+    color: white;
+}
+
+.categories, .collections{
+    display: flex;
+    align-items: center;
+}
+
+.categories ul li, .collections ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+
+.categories ul li a,
+.collections ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: color .50s;
+}
+
+.categories ul li a::before,
+.collections ul li a::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 2%;
+    left: 0; /* Start the underline from the left */
+    background-color: var(--orangedColor);
+    transition: width .3s ease-out; /* Transition width for smooth effect */
+}
+
+.categories ul li a:hover::before,
+.collections ul li a:hover::before {
+    width: 100%; /* Expand the underline to 100% on hover */
+}
+.collections ul li:first-child, .categories ul li:first-child{
+    color: var(--orangedColor);
+    font-weight: 600;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.book-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/book-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.book-form-wrapper{
+    width: 60%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+}
+
+.book-form-wrapper>div{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+
+.book-form input{
+    width: 260px;
+    height: 35px;
+    background-color: transparent;
+    border: solid white 1px;
+    margin: 10px;
+}
+
+.book-form select{
+    width: 260px;
+    height: 35px;
+    background-color: transparent;
+    border: solid white 1px;
+    color: white;
+    margin: 10px;
+}
+
+.book-form select option{
+    color: black;
+}
+
+.book-form input::placeholder{
+    padding-left: 20px;
+    color: white;
+}
+
+
+.book-form textarea{
+    width: 100%;
+    height: 130px;
+    padding: 20px;
+}
+.book-form>div{
+    margin:10px;
+}
+
+.book-form button{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+.services-flex-1{
+    padding: 30px;
+    position: relative;
+}
+
+
+.flex-header span, .flex-images span{
+    color: var(--orangedColor);
+}
+
+.flex-header{
+    margin-bottom: 10px;
+}
+
+
+.flex-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+}
+
+.log-off{
+    position: fixed;
+    right: 4%;
+    top: 6%;
+    display: none;
+    z-index: 4000;
+}
+
+.log-off button{
+    background-color:black;
+    color: white;
+    border: none;
+    width: 130px;
+    height: 35px;
+    cursor: pointer;
+    transition: all .50s;
+}
+
+.log-off button:hover{
+    background-color: white;
+    border: solid var(--orangedColor) 1px;
+    color: black;
+}
+
+
+.log-off-show{
+    display: inline-block;
+}
+
+.logout-hide{
+    display: none !important;
+}
+
+
+
+.makeup-type-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.makeup-type-header a {
+    padding: 0 20px; /* Adjust padding for smaller screens */
+    text-align: center;
+}
+
+.makeup-type-header button {
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.make-up-type-wrapper {
+    justify-content: center;
+    display: flex;
+    gap: 20px; /* Adjust gap between cards */
+}
+
+@media only screen and (max-width: 768px) {
+    .makeup-type-header a {
+        padding: 0 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .make-up-type-wrapper {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+}
+
+.makeup-type-card {
+    width: fit-content;
+    height: fit-content;
+}
+
+.makeup-type-img {
+    width: 100%;
+}
+
+.book-now-navigation .fa {
+    color: var(--orangedColor);
+}
+
+.book-now-navigation a {
+    color: var(--orangedColor);
+    text-decoration: none;
+}
+
+.service-name h2 span {
+    float: right;
+}
+
+.padding-container {
+    padding: 0 100px 0 100px;
+}
+
+.makeup-container footer {
+    margin-top: 100px;
 }
