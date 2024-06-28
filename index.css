@@ -1225,9 +1225,8 @@ footer{
 
 
 .book-wrapper{
-    width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/book-bg.png);
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(images/book-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -1238,7 +1237,6 @@ footer{
 }
 
 .book-form-wrapper{
-    width: 60%;
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
 }
 
@@ -1256,7 +1254,17 @@ footer{
     height: 35px;
     background-color: transparent;
     border: solid white 1px;
+    color: white;
     margin: 10px;
+}
+
+.book-form input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    padding: 0 20px 0 20px;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    padding: 0 20px 0 20px;
 }
 
 .book-form select{
@@ -1281,15 +1289,27 @@ footer{
 .book-form textarea{
     width: 100%;
     height: 130px;
-    padding: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
 }
+
+
 .book-form>div{
     margin:10px;
 }
 
 .book-form button{
+    background-color: black;
+    color: white;
+    border: solid white 1px;
+    transition: all .50s;
+}
+
+.book-form button:hover{
     background-color: white;
     color: black;
+    border: solid var(--orangedColor) 1px;
 }
 
 
