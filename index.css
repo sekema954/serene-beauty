@@ -39,7 +39,9 @@ input:focus, textarea:focus{
 .login-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr
+    grid-template-rows: 1fr;
+    gap: 0;
+    height: 100%;
 }
 
 .login-icon{
@@ -90,7 +92,7 @@ input:focus, textarea:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 0 60px 0 60px;
 }
 
 .grid-context-wrapper{
@@ -640,6 +642,10 @@ padding: 0 25px 0 25px;
     padding: 0 280px 0 280px;
 }
 
+.small-area-col1{
+    padding-left: 15px;
+}
+
 .youtube-frame{
     height: 500px;
 }
@@ -758,6 +764,7 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 0 260px 0 260px;
+    margin-top: 30px;
 }
 
 

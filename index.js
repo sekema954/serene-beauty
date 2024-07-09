@@ -1,3 +1,49 @@
+
+//testimony
+document.addEventListener('DOMContentLoaded', function() {
+    const testimonials = document.querySelectorAll('.show-test');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const pageIndicator = document.querySelector('.current-review');
+    let currentIndex = 0;
+    
+    // Show initial testimonial (test1)
+    testimonials[currentIndex].classList.add('active-test');
+
+    // Function to show the current testimonial
+    function showTestimonial(index) {
+        testimonials.forEach(testimonial => {
+            testimonial.classList.remove('active-test', 'test-animation');
+        });
+
+        testimonials[index].classList.add('active-test', 'test-animation');
+        pageIndicator.textContent = index + 1; // Update page indicator
+
+        // Remove the animation class after animation completes
+        setTimeout(() => {
+            testimonials[index].classList.remove('test-animation');
+        }, 1000); // Adjust this timeout based on your CSS animation duration
+    }
+
+    // Next button click event
+    nextBtn.addEventListener('click', function() {
+        if (currentIndex < testimonials.length - 1) {
+            currentIndex++;
+            showTestimonial(currentIndex);
+        }
+    });
+
+    // Previous button click event
+    prevBtn.addEventListener('click', function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            showTestimonial(currentIndex);
+        }
+    });
+});
+
+
+
 menubarClicked();
 function menubarClicked(){
     const menuBar = document.querySelector('.menu-bar');
@@ -45,53 +91,6 @@ function logOutClicked(){
 
     })
 }
-
-
-
-//testimony
-document.addEventListener('DOMContentLoaded', function() {
-    const testimonials = document.querySelectorAll('.show-test');
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
-    const pageIndicator = document.querySelector('.current-review');
-    let currentIndex = 0;
-    
-    // Show initial testimonial (test1)
-    testimonials[currentIndex].classList.add('active-test');
-
-    // Function to show the current testimonial
-    function showTestimonial(index) {
-        testimonials.forEach(testimonial => {
-            testimonial.classList.remove('active-test', 'test-animation');
-        });
-
-        testimonials[index].classList.add('active-test', 'test-animation');
-        pageIndicator.textContent = index + 1; // Update page indicator
-
-        // Remove the animation class after animation completes
-        setTimeout(() => {
-            testimonials[index].classList.remove('test-animation');
-        }, 1000); // Adjust this timeout based on your CSS animation duration
-    }
-
-    // Next button click event
-    nextBtn.addEventListener('click', function() {
-        if (currentIndex < testimonials.length - 1) {
-            currentIndex++;
-            showTestimonial(currentIndex);
-        }
-    });
-
-    // Previous button click event
-    prevBtn.addEventListener('click', function() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            showTestimonial(currentIndex);
-        }
-    });
-});
-
-
 
 
 
